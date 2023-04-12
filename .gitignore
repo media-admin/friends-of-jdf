@@ -1,0 +1,94 @@
+# GENERAL SETTINGS
+# -----------------------------
+# Numerous always-ignore extensions
+# -----------------------------
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+.tmp/
+
+
+
+# OS or Editor folders
+# -----------------------------
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+.nova
+
+
+# Ignore every DS_Store File on any location
+# -----------------------------
+.DS_Store
+*.DS_Store
+*/*.DS_Store
+
+
+
+
+
+# STATIC ENVIRONMENT
+# -----------------------------
+
+# Ignore .htaccess files
+# -----------------------------
+*.htaccess
+*/.htaccess
+
+
+# Ignore node dependency directories
+# -----------------------------
+/node_modules
+package-lock.json
+*package-lock.json
+*/package-lock.json
+
+
+
+
+# Exclude static environment's dist folder
+# -----------------------------
+dist
+
+
+# Exclude WordPress Installation temporarily <<<<<< INCLUDE WHEN STATIC DEVELOPMENT HAS BEEN FINISHED >>>>>>>
+# -----------------------------
+
+
+
+# DYNAMIC ENVIRONMENT
+# -----------------------------
+
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory
+# -----------------------------
+cms/backups
+cms/wp-admin
+cms/wp-includes
+cms/*
+
+!cms/wp-content
+!cms/wp-content/*
+
+cms/wp-content/language
+cms/wp-content/plugins
+cms/wp-content/upgrade
+cms/wp-content/uploads
+cms/wp-content/index.php
+
+!cms/wp-content/mu-plugins/
+!cms/wp-content/mu-plugins/*
+!cms/wp-content/plugins/
+!cms/wp-content/plugins/*
+!cms/wp-content/themes/
+
+
