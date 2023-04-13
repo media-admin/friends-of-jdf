@@ -1,0 +1,128 @@
+/* == BASIC SETTINGS == */
+
+/* -- Resets -- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // Basis = 16px --> 1.0rem = 10px
+}
+
+body {
+  color: $color-gray;
+  background-image: url('../../assets/images/backgrounds/bg_body.jpg');
+  background-size: contain;
+  background-repeat: repeat-y;
+
+  @include atMedium {
+    border-top-width: 12px;
+  }
+}
+
+main {
+  position: relative;
+  margin: 0rem;
+  padding: 1rem 1rem;
+  z-index: 0;
+
+  @include atMedium {
+    position: relative;
+  }
+}
+
+
+ul {
+  list-style-image: url('../../assets/icons/icon_bullet-point.svg');
+  list-style-position: inside;
+  padding-left: 2.0rem;
+
+  @include atMedium {
+  }
+}
+
+
+ul li:marker {
+  padding-right: 5.0rem;
+  margin-right: 10px !important;
+  right: 10px;
+
+  @include atMedium {
+  }
+}
+
+
+ol {
+  list-style-position: inside;
+  padding-left: 2.0rem;
+
+  @include atMedium {
+  }
+}
+
+
+input[type=checkbox] {
+  accent-color: $color-primary;
+}
+
+
+input[type=radio] {
+  accent-color: $color-primary;
+}
+
+
+input[type=range] {
+  accent-color: $color-primary;
+}
+
+
+progress {
+  accent-color: $color-primary;
+}
+
+
+
+
+
+
+.site-content {
+  padding: 1rem;
+
+
+  @include atMedium {
+    max-width: 1136px;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+.img--fullwidth {
+  position: absolute;
+  max-width: inherit;
+  width: 100vw;
+  min-height: 200px;
+  height: fit-content;
+  left: 0%;
+  right: 50%;
+  margin: 2rem auto;
+  margin-left: -8vw;
+  margin-right: -50vw;
+  padding: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  object-position: center center;
+  overflow: hidden;
+
+  @include atMedium {
+    position: relative;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    margin-right: initial;
+  }
+}

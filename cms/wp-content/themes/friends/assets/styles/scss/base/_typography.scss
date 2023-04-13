@@ -1,0 +1,645 @@
+/* == TYPOGRAPHY SETTINGS == */
+
+/* -- Font Imports -- */
+
+/* alumni-sans-100 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-100.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-100.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-100.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-100.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-100.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-100.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-100italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: italic;
+  font-weight: 100;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-100italic.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-100italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-100italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-100italic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-100italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-100italic.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-200 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-200.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-200.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-200.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-200.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-200.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-200.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-200italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: italic;
+  font-weight: 200;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-200italic.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-200italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-200italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-200italic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-200italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-200italic.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-300 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-300.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-300.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-300.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-300.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-300.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-300.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-300italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-300italic.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-300italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-300italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-300italic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-300italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-300italic.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-regular - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-regular.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-regular.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-italic.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-italic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-italic.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-500 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-500.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-500.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-500.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-500.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-500italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-500italic.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-500italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-500italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-500italic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-500italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-500italic.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-600 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-600.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-600.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-600.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-600.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-600italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-600italic.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-600italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-600italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-600italic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-600italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-600italic.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-700 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-700.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-700.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-700.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-700italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-700italic.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-700italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-700italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-700italic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-700italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-700italic.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-800 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-800.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-800.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-800.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-800.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-800.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-800.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-800italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-800italic.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-800italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-800italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-800italic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-800italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-800italic.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-900 - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-900.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-900.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-900.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-900.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-900.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-900.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+/* alumni-sans-900italic - latin_latin-ext */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alumni Sans";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-900italic.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-900italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-900italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-900italic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-900italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/alumni-sans/alumni-sans-v16-latin_latin-ext-900italic.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+
+
+
+
+/* AdrenalineBrush-Regular */
+@font-face {
+  font-family: 'Adrenaline Brush';
+  src: url("../../assets/fonts/adrenaline-brush/AdrenalineBrush-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/adrenaline-brush/AdrenalineBrush-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../assets/fonts/adrenaline-brush/AdrenalineBrush-Regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../assets/fonts/adrenaline-brush/AdrenalineBrush-Regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../assets/fonts/adrenaline-brush/AdrenalineBrush-Regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/adrenaline-brush/AdrenalineBrush-Regular.svg#AlumniSans")
+      format("svg"); /* Legacy iOS */
+}
+
+
+
+
+/* -- Default Classes -- */
+
+body {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: $color-gray;
+  hyphens: auto;
+  hyphenate-limit-chars: auto 3;
+  hyphenate-limit-lines: 4;
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-limit-chars: auto 3;
+  -webkit-hyphenate-limit-lines: 4;
+  -ms-hyphens: auto;
+  -ms-hyphenate-limit-chars: auto 3;
+  -ms-hyphenate-limit-lines: 4;
+}
+
+h1 {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 5rem;
+  color: $color-yellow;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+
+  @include atMedium {
+    font-size: 8rem;
+    line-height: 8.6rem;
+  }
+}
+
+h2 {
+  font-family: "Adrenaline Brush", serif;
+  font-size: 4.8rem;
+  line-height: 5.0rem;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  color: $color-primary;
+  -webkit-text-stroke: 0.25px $color-yellow;
+  text-shadow: 1px 1px 0 $color-yellow, -1px -1px 0 $color-yellow,
+    1px -1px 0 $color-yellow, -1px 1px 0 $color-yellow, 1px 1px 0 $color-yellow;
+  margin-bottom: 2.0rem;
+
+
+  @include atMedium {
+    font-size: 4.8rem;
+    line-height: 7rem;
+  }
+}
+
+
+h2.sub-heading {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  letter-spacing: 2px;
+  text-transform: none;
+  color: $color-primary;
+  -webkit-text-stroke: initial;
+  text-shadow: none;
+  margin-bottom: 1.0rem;
+
+  @include atMedium {
+    font-size: 3.4rem;
+    line-height: 4.0rem;
+    letter-spacing: 4px;
+  }
+}
+
+
+h3 {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  color: $color-gray;
+  text-transform: uppercase;
+  margin-bottom: 1.0rem;
+
+  @include atMedium {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+}
+
+h4 {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  color: $color-gray;
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.0rem;
+}
+
+
+p.text-center {
+  position: relative;
+  display: block;
+  max-width: 80%;
+  width: auto;
+  margin: 25px auto;
+  margin-top: 5%;
+  padding: 15px;
+}
+
+
+p.text-center > a {
+  color: $color-yellow;
+}
+
+
+
+a {
+  color: $color-gray;
+}
+
+strong {
+  font-size: 2.5rem;
+  line-height: 3.4rem;
+  color: $color-primary;
+}
+
+
+.ul--options-actionticket strong {
+  font-size: inherit;
+  line-height: 3.4rem;
+  color: $color-gray;
+}
+
+
+.program-list li strong {
+  font-size: inherit;
+  line-height: 3.4rem;
+  color: $color-gray;
+}
+
+
+.program-list li  {
+  line-height: 3.4rem;
+}
+
+
+.schedule li strong {
+  font-size: inherit;
+  line-height: 3.4rem;
+  color: $color-gray;
+}
+
+
+.heading-top {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-top: 2.0rem;
+  margin-bottom: -0.5rem;
+}
+
+
+.text--yellow {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  letter-spacing: 4px;
+  color: $color-yellow;
+}
+
+
+
+.cite--yellow > p {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 900;
+  font-size: 5.4rem;
+  line-height: 5.0rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $color-yellow;
+  margin-top: -1rem;
+  margin-left: 3.0rem;
+}
+
+
+.cite--yellow > p:before {
+  content: '„';
+  font-family: "Adrenaline Brush", serif;
+  font-size: 8.5rem;
+  color: $color-yellow;
+  margin-left: -3.0rem;
+  padding-right: 1.0rem;
+}
+
+
+.cite--yellow cite {
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  letter-spacing: 4px;
+  color: $color-yellow;
+  margin-bottom: 1.0rem;
+}

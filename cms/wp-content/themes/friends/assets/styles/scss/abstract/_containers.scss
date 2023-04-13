@@ -1,0 +1,43 @@
+/* == CONTAINERS == */
+
+.container-fullwidth {
+  position: relative;
+  display: block;
+  width: calc(100% + 6rem);
+  margin-top: 1rem;
+  margin-right: initial;
+  margin-bottom: 1rem;
+  margin-left: -6rem;
+  padding: 5rem 3rem;
+  overflow: hidden;
+}
+
+.container-fullwidth__img {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+
+.inner-wrapper {
+  position: relative;
+  display: block;
+  max-width: calc(1136px + 2rem);
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+
+.intro {
+  padding: 0rem 0.5rem;
+}
+
+
+
+.img-container {
+  position: relative;
+  display: block;
+  min-height: 250px;
+}

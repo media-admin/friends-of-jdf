@@ -1,0 +1,410 @@
+/* == HEADER == */
+.site-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include atMedium {
+    height: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    /* padding-right: 1rem;
+    padding-left: 1rem; */
+    z-index: 100 !important;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include atMedium {
+      max-width: 1136px;
+      position: relative;
+      margin: 0 auto;
+    }
+
+  }
+
+  & a {
+    color: $color-secondary;
+    @include style-text-link;
+  }
+
+  &__branding {
+    margin-left: 1.5rem;
+
+    @include atMedium {
+      width: initial;
+      margin-left: 0.0rem;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 10;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    min-width: 60%;
+    max-width: 70%;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 0.5rem;
+
+    @include atMedium {
+      position: relative;
+      min-height: 200px;
+      min-width: initial;
+      max-width: 275px;
+      width: auto;
+      margin-top: 0rem;
+      overflow: hidden;
+      z-index: 100;
+      /* min-width: 150px;
+      min-height: 120px; */
+    }
+  }
+
+  &__logo-img {
+    width: 100%;
+    height: auto;
+
+    @include atMedium {
+      display: none;
+    }
+  }
+
+  &__logo-img--desktop {
+    display: none;
+
+    @include atMedium {
+      position: relative;
+      display: block;
+      min-width: 105px;
+      height: auto;
+      margin: auto;
+    }
+  }
+
+
+  &__claim {
+    max-width: 70%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 10%;
+
+    @include atMedium {
+      max-width: initial;
+      width: initial;
+      height: initial;
+      margin: initial;
+      padding-left: initial;
+    }
+  }
+
+
+  &__claim-img {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+
+    @include atMedium {
+      position: relative;
+      display: block;
+      width: 80%;
+
+      padding-top: 2rem;
+      padding-left: 2rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* -- SITE-HEADER CONTACT AREA == */
+
+  &__navi-contact-area {
+
+    @mixin atMedium {
+      position: relative;
+      width: 100%;
+
+    }
+
+    @mixin atLarge {
+
+    }
+
+  }
+
+
+
+  &__navi-contact-information {
+    display: none !important;
+
+
+    @mixin atMedium {
+      position: relative;
+      display: inline-flex !important;
+      align-items: flex-end;
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      border-top: 0px solid $color-primary;
+      border-bottom: 0px solid $color-primary;
+      padding-left: 18px;
+      padding-right: 18px;
+      padding-bottom: 0.75rem;
+    }
+
+    @mixin atLarge {
+
+    }
+
+    & a {
+      font-family: 'Alumni Sans', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: $color-primary;
+      /* padding-left: 2.0rem; */
+    }
+
+  }
+
+
+
+  &__navi-contact-information-phone {
+    display: inline-flex;
+    align-items: flex-start;
+    width: 50%;
+    line-height: 0.8rem;
+    margin-top: 15px;
+  }
+
+
+  &__navi-contact-information-route {
+    display: inline-flex;
+    align-items: flex-start;
+    width: 50%;
+    line-height: 0.8rem;
+    margin-top: 10px;
+  }
+
+
+  &__navi-contact-information-phone-infos {
+    margin-left: 0.5rem !important;
+  }
+
+
+  &__navi-contact-information-mail-infos {
+    margin-left: 0.5rem !important;
+  }
+
+
+  &__navi-contact-information-route {
+    position: relative;
+    width: 100%;
+    line-height: 0.8rem;
+  }
+
+  &__navi-contact-information-route-icon {
+    width: 25px;
+    margin-top: -5px;
+
+  }
+
+
+  &__navi-contact-information-route-callout {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+
+
+  &__navi-contact-information-route-number {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+
+  &__navi-contact-information-mail {
+    position: relative;
+    width: 100%;
+    line-height: 0.8rem;
+    text-align: right;
+
+    @mixin atMedium {
+      text-align: inherit;
+
+    }
+  }
+
+  &__navi-contact-information-mail-icon {
+    width: 22px;
+    margin-top: -5px;
+
+  }
+
+
+  &__navi-contact-information-mail-callout {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+
+
+  &__navi-contact-information-mail-address {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* == SIDEBAR == */
+
+  &__navi-additional-area {
+    display: none !important;
+
+
+    @include atMedium {
+      position: absolute;
+      width: auto;
+      display: flex !important;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 2.0rem;
+      top: 15%;
+      right: 0px;
+      margin-right: 50px;
+      z-index: 1;
+    }
+
+  }
+
+
+  &__navi-additional-area a {
+    display: inline-block;
+    height: 3.0rem;
+    width: 14.0rem;
+    text-decoration: none;
+    background-color: $color-white;
+  }
+
+
+  &__navi-additional-area a .link {
+    position: relative;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    color: $color-primary;
+    padding: 0.5rem 1.5rem;
+    top: 0.25rem;
+  }
+
+
+  &__navi-contact-information-reservation {
+    position: relative;
+  }
+
+  &__navi-contact-information-reservation-text {
+
+  }
+
+  &__navi-contact-information-reservation-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+
+  &__navi-contact-information-route-planen {
+    position: relative;
+  }
+
+  &__navi-contact-information-route-planen-text {
+
+  }
+
+  &__navi-contact-information-phone-planen-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__navi-contact-information-facebook {
+    position: relative;
+  }
+
+  &__navi-contact-information-facebook-text {
+
+  }
+
+  &__navi-contact-information-facebook-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__navi-contact-information-instagram {
+    position: relative;
+  }
+
+  &__navi-contact-information-instagram-text {
+
+  }
+
+  &__navi-contact-information-instagram-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}

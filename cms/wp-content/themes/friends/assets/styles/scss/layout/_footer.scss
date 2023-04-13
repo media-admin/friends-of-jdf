@@ -1,0 +1,162 @@
+/* == SITE FOOTER == */
+.site-footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  background-image: url('../../assets/images/backgrounds/bg_footer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  margin-top: 4.0rem;
+
+  @mixin atMedium {
+
+  }
+
+  a {
+    color: $color-primary;
+    text-decoration: none;
+  }
+
+
+  &__navigation-area {
+    display: flex;
+    flex-flow: column;
+
+    @mixin atMedium {
+      flex-direction: row;
+      padding-top: 1.5rem;
+      padding-bottom: 4.0rem;
+    }
+
+  }
+
+
+  &__navigation-container {
+
+    @mixin atMedium {
+      position: relative;
+      width: 75%;
+    }
+  }
+
+  &__navigation {
+    height: 330px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: baseline;
+    font-weight: 700;
+    line-height: 2.0rem;
+    padding-top: 0.0rem;
+    padding-bottom: 4.0rem;
+  }
+
+  &__navigation-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    list-style: none;
+    line-height: 1.6rem;
+    margin: 0 auto;
+    margin-top: 2.0rem;
+    padding-left: inherit;
+
+    @mixin atMedium {
+      flex-direction: initial;
+      align-items: baseline;
+      justify-content: flex-end;
+      margin-right: 5%;
+      gap: 100px;
+    }
+
+  }
+
+
+  &__navigation-list-item {
+    font-family: 'Alumni Sans', sans-serif;
+    font-weight: 700;
+
+    font-size: 2.0rem;
+    line-height: 2.6rem;
+    text-align: center !important;
+    letter-spacing: 0.05rem;
+    border-radius: 8px;
+    background-color: $color-yellow;
+    border: none;
+    padding: 0.75rem 1.5rem;
+  }
+
+
+  &__navigation-list a {
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+
+
+  &__copyright-container {
+    order: 2;
+    color: white;
+    background-color: $color-primary;
+
+    @mixin atMedium {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      order: 1;
+      text-align: left;
+      margin-left: 2.5%;
+    }
+  }
+
+
+  &__copyright {
+    position: relative;
+    width: 85%;
+    font-family: 'Alumni Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    margin: 2.0rem auto;
+    margin-bottom: 0px;
+    padding-top: 2.0rem;
+    padding-bottom: 1.5rem;
+
+    @mixin atMedium {
+      display: block;
+      width: 100%;
+      bottom: 0px;
+
+      margin-top: 0px;
+      padding-top: 2.0rem;
+      padding-bottom: 25px;
+    }
+
+    @mixin atLarge {
+
+    }
+  }
+
+
+
+}

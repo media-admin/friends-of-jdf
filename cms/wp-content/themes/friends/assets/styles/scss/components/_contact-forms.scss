@@ -1,0 +1,427 @@
+/* === CONTACT FORMS === */
+.contact-form-section {
+	position: relative;
+	width: 100%;
+	color: $color-gray;
+	margin: 0px 0px;
+	padding: 4.5rem 0.25rem;
+}
+
+
+.contact-form-section__container {
+	position: relative;
+	width: 90%;
+	font-family: "Alumni Sans", sans-serif;
+	padding: 4.5rem 0.25rem;
+}
+
+
+.contact-form-section__title {
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+	margin-bottom: 0.5rem;
+}
+
+
+.contact-form-section__text {
+	font-family: "Alumni Sans", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+
+.contact-form-section a {
+	font-weight: 700;
+	color: $color-gray;
+}
+
+
+.contact-form-section__form {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	/* padding: 1rem 2rem; */
+
+	@include atMedium {
+		/* padding: 2.5rem;
+		margin: 2.5rem; */
+	}
+}
+
+
+.contact-form-section__form ::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-family: "Alumni Sans", sans-serif;
+	font-size: 0.8rem;
+	font-weight: 100;
+	color: $color-gray;
+	opacity: 0.7; /* Firefox */
+}
+
+.contact-form-section__form :-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-family: "Alumni Sans", sans-serif;
+	font-weight: 100;
+	font-size: 0.8rem;
+	color: $color-gray;
+	opacity: 0.7; /* Firefox */
+}
+
+.contact-form-section__form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-family: "Alumni Sans", sans-serif;
+	font-weight: 100;
+	font-size: 0.8rem;
+	color: $color-gray;
+	opacity: 0.7; /* Firefox */
+}
+
+.contact-form-section__form input:focus {
+	outline: none;
+}
+
+
+.contact-form-section__form input {
+	font-family: "Alumni Sans", sans-serif;
+	font-size: 2.0rem;
+	line-height: 2.6rem;
+}
+
+input[type=radio] {
+	margin-right: 0.25em;
+}
+
+.contact-form-section__form > div.column--half {
+	flex: 100%;
+	padding: 0.25rem;
+
+	@include atMedium {
+		flex: 48%;
+		padding: 1rem;
+	}
+}
+
+
+.contact-form-section__form > div.column--one-quarter {
+
+	@include atMedium {
+		flex: 23%;
+		padding: 1rem;
+	}
+}
+
+
+.contact-form-section__form > div.column--three-quarters {
+
+	@include atMedium {
+		flex: 73%;
+		padding: 1rem;
+	}
+}
+
+
+.contact-form-section__form > div.column--full {
+	flex: 100%;
+	padding: 0.25rem;
+
+	@include atMedium {
+		padding: 0rem;
+		padding: 1rem;
+	}
+
+}
+
+
+.contact-form-section__form-item {
+	position: relative;
+	width: 100%;
+	color: $color-gray !important;
+	background-color: §color-white;
+	box-shadow: none;
+	border: none;
+	padding: 1.5rem;
+	border: 1px solid $color-gray;
+	margin: 0.5rem auto;
+}
+
+
+.contact-form-section__form label {
+	font-family: "Alumni Sans", sans-serif;
+	font-size: 2.6rem;
+	line-height: 3.2rem;
+	font-weight: 400;
+	color: $color-gray;
+	margin-top: 2.5rem;
+	margin-right: 2.0rem;
+}
+
+
+.wpcf7-list-item-label {
+	font-family: "Alumni Sans", sans-serif;
+	font-size: 2.6rem;
+	line-height: 3.2rem;
+	font-weight: 400;
+	color: $color-gray;
+	margin-top: 2.5rem;
+}
+
+
+.contact-form-section__form-item-property {
+	position: relative;
+	display: block;
+	width: 100%;
+	line-height: 1.4rem;
+	color: $color-gray !important;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	padding: 0.25rem;
+	/* border-bottom: 2px solid $mainBlue; */
+	padding-bottom: 1.5rem;
+	margin: 1.5rem auto;
+}
+
+
+.contact-form-section__form-item-property .wpcf7-list-item {
+	margin-left: 0rem;
+	margin-right: 2rem;
+}
+
+
+.contact-form-section__form-item-activities {
+	position: relative;
+	display: block;
+	width: 100%;
+	line-height: 1.8rem;
+	color: $color-gray !important;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	padding: 0.25rem;
+	/* border-bottom: 2px solid $mainBlue; */
+	padding-bottom: 1.5rem;
+	/* margin: 1.5rem auto; */
+	margin-left: -1.0em;
+}
+
+
+
+.contact-form-section__form-item-activities .wpcf7-list-item-label {
+		font-size: 2.0rem;
+		line-height: 3.2rem;
+}
+
+
+
+
+.contact-form-section__form-item-gender {
+	position: relative;
+	display: block;
+	width: 100%;
+	line-height: 1.4rem;
+	color: $color-gray !important;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	padding: 0.25rem;
+	padding-bottom: 1.5rem;
+	/* margin: 1.5rem auto; */
+}
+
+
+.contact-form-section__form-item-gender .wpcf7-list-item.first {
+	margin-left: 0rem !important;
+}
+
+
+.contact-form-section__form-item-intrested-in .wpcf7-list-item {
+	margin-left: 0rem;
+	margin-right: 2rem;
+}
+
+
+.contact-form-section__form-item-message {
+	font-family: "Alumni Sans", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	min-height: 100px;
+	border: 1px solid $color-gray;
+}
+
+
+.contact-form-section__form .wpcf7-acceptance .wpcf7-list-item .wpcf7-list-item-label {
+	font-family: "Alumni Sans", sans-serif;
+	font-size: 2.0rem;
+	line-height: 2.6rem;
+	margin-left: 0rem !important;
+}
+
+
+.contact-form-section__form-item-dsgvo .wpcf7-acceptance .wpcf7-list-item {
+	margin-left: 0rem !important;
+}
+
+
+.contact-form-section__form-label-dsgvo-acceptance {
+	padding-left: -10px;
+	margin-left: 0rem !important;
+}
+
+
+.contact-form-section__form-item-agb .wpcf7-list-item {
+	margin-left: 0rem !important;
+}
+
+
+.contact-form-section__form-item-dsgvo-checkbox {
+	line-height: 1.4rem;
+}
+
+
+.contact-form-section input[type=checkbox] {
+	position: relative;
+	left: 0.5rem;
+	top: -2px;
+	vertical-align: baseline;
+	line-height: 1.4rem;
+	margin-top: -2px !important;
+	z-index: 0;
+	-webkit-appearance: none;
+}
+
+
+.contact-form-section input[type=checkbox]::before {
+	width: 12px;
+	height: 12px;
+	border-radius: 0;
+	border: 2px solid $color-gray !important;
+	background-color: transparent !important;
+	display: block;
+	content: "";
+	float: left !important;
+	margin-right: 15px !important;
+	left: -0.25rem !important;
+	z-index: 5 !important;
+	position: relative;
+}
+
+
+.contact-form-section input[type=checkbox]:checked:after {
+	content: "";
+	display: block;
+	width: 4px !important;
+	height: 10px !important;
+	border: solid $color-gray !important;
+	border-width: 0 2px 2px 0 !important;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 0px !important;
+	left: -1px !important;
+	margin-left: 2px !important;
+}
+
+
+.contact-form-section__form-label-topic {
+	font-family: "Alumni Sans", sans-serif;
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+
+
+.contact-form-section select {
+	position: relative;
+	width: 100%;
+	font-size: 1rem;
+	line-height: 1.6rem;
+	font-weight: 500;
+	color: #ffffff;
+	background-color: transparent !important;
+	border: 2px solid #ffffff !important;
+	padding: 0.25rem 0.5rem;
+}
+
+
+.contact-form-section select:focus-visible {
+	font-weight: 300 !important;
+	color: $color-gray;
+	background-color: #ffffff !important;
+	border: 2px solid $color-gray !important;
+	outline-style: none;
+}
+
+
+.contact-form-section__form-item-dsgvo-acceptance {
+	position: absolute;
+	display: inline-block;
+	width: 92%;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.6rem;
+	opacity: 1; /* Firefox */
+	margin-top: -0.25rem;
+	padding-left: 0.75rem;
+}
+
+
+.wpcf7-form-control .wpcf7-acceptance {
+	line-height: 1.6rem;
+	padding-left: 0.25rem;
+}
+
+
+.contact-form-section__form-item-dsgvo-acceptance a {
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.6rem;
+	opacity: 1; /* Firefox */
+	text-decoration: none;
+}
+
+
+.contact-form-section__btn {
+	position: relative;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	display: block;
+
+	position: relative;
+	display: inline-block;
+	font-family: "Alumni Sans", sans-serif;
+	font-weight: 800;
+	font-size: 2.6rem;
+	line-height: 3.1rem;
+	letter-spacing: 0.2rem;
+	color: $color-yellow;
+	background-color: $color-secondary;
+	border-radius: 8px;
+	border: 0px solid;
+	text-decoration: none;
+	letter-spacing: 2px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: 1.0rem;
+	padding: 0.75rem 1.5rem;
+
+
+	@include atMedium {
+		margin-top: 3.5rem !important;
+		padding: 1rem 1.5rem !important;
+	}
+
+	img {
+		position: relative;
+		width: 100%;
+	}
+
+
+
+
+}
+
+
+.wpcf7-not-valid-tip {
+	font-size: 1.8rem;
+	color: $color-white;
+	background-color: rgba($color-primary,0.99);
+	padding: 0 0.5rem;
+}
+
+

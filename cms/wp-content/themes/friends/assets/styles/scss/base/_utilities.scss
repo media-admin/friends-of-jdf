@@ -1,0 +1,61 @@
+/* == UTILITIES & HELPERS == */
+
+.alignfull {
+	width: calc( 100vw - 0.75rem );
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	-o-object-fit: cover;
+	object-fit: cover;
+	object-position: center center;
+	overflow: hidden;
+}
+
+
+.fullwidth {
+	width: calc( 100vw - 0.75rem );
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	-o-object-fit: cover;
+	object-fit: cover;
+	object-position: center center;
+	overflow: hidden;
+}
+
+
+.wp-block-button__link {
+	position: relative;
+	display: inline-block;
+	font-family: "Alumni Sans", sans-serif;
+	font-weight: 800;
+	font-size: 2.6rem;
+	line-height: 3.1rem;
+	color: $color-yellow;
+	background-color: $color-secondary;
+	border-radius: 8px;
+	border: 0px solid;
+	text-decoration: none;
+	letter-spacing: 2px;
+	padding: 0.75rem 1.5rem;
+}
+
+
+
+.wp-block-buttons>.wp-block-button {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+
+
+.wp-block-media-text .wp-block-media-text__content {
+	padding: 0 3%;
+}
+
+
+

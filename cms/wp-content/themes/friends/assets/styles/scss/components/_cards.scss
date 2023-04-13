@@ -1,0 +1,125 @@
+/* === CARDS === */
+.card {
+	position: relative;
+	width: 100%;
+	background-color: white;
+	border-radius: 17px;
+	/* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	mix-blend-mode: multiply;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	overflow: hidden;
+
+	@include atMedium {
+		width: 48%;
+	}
+
+	@include atLarge {
+		width: 32%;
+	}
+
+
+	&__container {
+		position: relative;
+		display: flex;
+		flex: 1;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 2%;
+		flex-basis: 100%;
+		flex-grow: 0;
+		flex-shrink: 0;
+		justify-content: space-around;
+		align-items: flex-start;
+
+		@include atMedium {
+			flex: 2;
+			flex-basis: 50%
+		}
+
+		@include atLarge {
+			flex: 3;
+			flex-basis: 33%;
+		}
+
+
+
+
+	}
+
+
+	position: relative;
+	width: 100%;
+
+	@include atMedium {
+		width: 48%;
+	}
+
+	@include atLarge {
+		width: 32%;
+	}
+
+
+	&__pretitle {
+		position: relative;
+		width: 100%;
+		color: #707070;
+		font-size: 1.0rem;
+		font-weight: 700;
+		line-height: 1.0rem;
+
+		@include atMedium {
+			margin-bottom: 0px;
+		}
+	}
+
+
+	&__title {
+		position: relative;
+		width: 100%;
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 1.8rem;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+
+	&__subtitle {
+		position: relative;
+		width: 100%;
+		color: #707070;
+		font-size: 1.0rem;
+		font-weight: 700;
+		line-height: 1.0rem;
+	}
+
+
+	&__thumbnail {
+		margin-top: 1.0rem;
+		margin-bottom: 1.0rem;
+	}
+
+
+	&__content {
+		padding-bottom: 2.5rem;
+	}
+
+
+	&__content p {
+		line-height: 2.2rem !important;
+		padding-bottom: 0.75rem;
+	}
+
+
+	&_button {
+		font-size: 0.9rem;
+		font-weight: 500;
+		border-radius: 28px;
+		margin: 0.25rem 0;
+		margin-bottom: 2.0rem !important;
+		padding: 0.75rem 1.0rem;
+	}
+
+}

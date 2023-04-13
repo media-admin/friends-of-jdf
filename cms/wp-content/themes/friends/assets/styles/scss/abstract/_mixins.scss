@@ -1,0 +1,40 @@
+/* == MIXINS == */
+
+/* -- Clearfix -- */
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* -- Link Styles -- */
+@mixin style-text-link {
+  text-decoration: none;
+  color: $color-secondary;
+}
+
+@mixin style-text-link-default {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* -- Breakpoints -- */
+@mixin atSmall {
+  @media (min-width: 530px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin atLarge {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

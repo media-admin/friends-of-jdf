@@ -1,0 +1,57 @@
+/* == LARGE HERO */
+.section-large-hero {
+  position: relative;
+  width: 100%;
+  min-height: 250px;
+  max-height: 500px;
+  height: auto;
+  margin: 0;
+  background-image: url('../../assets/images/backgrounds/bg_hero-header.jpg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  object-fit: contain;
+
+  @include atMedium {
+    position: relative;
+    min-height: 768px;
+    max-height: 780px;
+    /*     top: -105px; */
+    background-size: cover;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    object-position: center center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  &__img {
+    position: relative;
+    display: block;
+    max-width: calc(1136px + 2rem);
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+
+  &__site-title {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(#172905,0.7);
+    background-blend-mode: multiply;
+    bottom: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @include atMedium {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+  }
+
+}
