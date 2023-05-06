@@ -17,8 +17,11 @@
 		}
 
 		function my_plugin_locale_filter($locale, $domain){
-
 			if($domain === 'wp-fastest-cache'){
+
+				if(!isset($this->options->wpFastestCacheLanguage)){
+					return "en_US";
+				}
 
 				$locale = $this->options->wpFastestCacheLanguage;
 				
@@ -790,13 +793,13 @@
 					"RewriteCond %{HTTP_USER_AGENT} !(WP\sFastest\sCache\sPreload(\siPhone\sMobile)?\s*Bot)"."\n".
 					"RewriteCond %{REQUEST_METHOD} !POST"."\n".
 					$ifIsNotSecure."\n".
-					"RewriteCond %{REQUEST_URI} !(\/){2}$"."\n".
+					"RewriteCond %{REQUEST_URI} !(\/){2,}"."\n".
+					"RewriteCond %{THE_REQUEST} !(\/){2,}"."\n".
 					$trailing_slash_rule.
 					"RewriteCond %{QUERY_STRING} !.+"."\n".$loggedInUser.
 					$consent_cookie.
 					"RewriteCond %{HTTP:Cookie} !comment_author_"."\n".
 					//"RewriteCond %{HTTP:Cookie} !woocommerce_items_in_cart"."\n".
-					"RewriteCond %{HTTP:Cookie} !safirmobilswitcher=mobil"."\n".
 					'RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]'."\n".$mobile;
 			
 

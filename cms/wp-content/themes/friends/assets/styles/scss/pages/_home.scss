@@ -1,0 +1,124 @@
+/* == PAGE HOME */
+.home h1 {
+  text-indent: -9999px;
+  height: 0rem;
+}
+
+.home .container-half-on-desktop {
+  @include atMedium {
+    position: relative;
+    width: calc(50% + 3rem) !important;
+    min-height: 350px;
+    max-height: 350px;
+    height: 100%;
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.home .container-half-on-desktop:nth-child(2n) {
+  @include atMedium {
+    right: -3rem;
+  }
+}
+
+.home .container-fullwidth--green {
+  @include atMedium {
+    position: relative;
+    min-height: 280px;
+    right: auto;
+    margin-left: 4rem;
+    padding: 5rem 3rem;
+    padding-top: 10rem;
+  }
+}
+
+.home .container-fullwidth--red {
+  @include atMedium {
+    display: flex;
+    flex-direction: row;
+    min-height: 280px;
+    position: relative;
+    left: 4rem;
+    right: 0;
+    padding-top: 10rem;
+  }
+}
+
+.home .container-fullwidth--red :nth-child(1) {
+  @include atMedium {
+    order: 2;
+  }
+}
+
+.home .container-fullwidth--red :nth-child(2) {
+  @include atMedium {
+    order: 1;
+  }
+}
+
+.home .container-fullwidth--red .highlight__menu-wrapper {
+  @include atMedium {
+    position: relative;
+    width: 48%;
+    margin-top: -5rem;
+  }
+}
+
+.home
+.container-fullwidth--red
+.highlight__menu-wrapper
+.container-fullwidth__img {
+
+  @include atMedium {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.home .container-fullwidth--red .highlight__menu-description {
+  @include atMedium {
+    position: relative;
+    width: 48%;
+  }
+}
+
+.home .seperator--red {
+  @include atMedium {
+  }
+}
+
+
+
+.home .success-item {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: $color-white;
+  background-color: $color-secondary;
+  padding: 0.5rem 0.25rem;
+}
+
+.success-percentage {
+  display: block;
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  font-weight: 400;
+  color: $color-white;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.home strong {
+  @include atMedium {
+  }
+}
+
+
+.home .site-footer {
+  @include atMedium {
+  }
+}
+
+

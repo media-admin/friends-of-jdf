@@ -147,6 +147,10 @@
 				$this->cacheFilePath = false;
 			}
 
+			if(preg_match("/\/{2,}/", $this->cacheFilePath)){
+				$this->cacheFilePath = false;
+			}
+
 			if($this->isMobile()){
 				if(isset($this->options->wpFastestCacheMobile)){
 					if(!class_exists("WpFcMobileCache")){

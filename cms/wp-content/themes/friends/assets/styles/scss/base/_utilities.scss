@@ -28,20 +28,43 @@
 }
 
 
+.wp-block-image.fulllwidth .size-full {
+	margin-left: -1.0rem;
+	margin-right: -1.0rem;
+}
+
+
+
 .wp-block-button__link {
 	position: relative;
 	display: inline-block;
-	font-family: "Alumni Sans", sans-serif;
-	font-weight: 800;
-	font-size: 2.6rem;
-	line-height: 3.1rem;
-	color: $color-yellow;
+	font-family: "Albert Sans", sans-serif;
+	font-weight: 400;
+	font-size: 2.2rem;
+	line-height: 2.4rem;
+	color: $color-white;
+	text-transform: uppercase;
 	background-color: $color-secondary;
-	border-radius: 8px;
 	border: 0px solid;
+	border-radius: 0;
 	text-decoration: none;
-	letter-spacing: 2px;
-	padding: 0.75rem 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding: 1.75rem 2.5rem;
+
+	@include atMedium {
+		font-size: 2.4rem;
+		line-height: 2.6rem;
+	}
+}
+
+
+.wp-block-button__link strong {
+	font-size: 2.4rem;
+	font-weight: 800;
+	color: $color-white;
+	text-decoration: none;
+	letter-spacing: .15rem;
 }
 
 
@@ -53,9 +76,123 @@
 
 
 
+
+.btn--higher .wp-block-button__link {
+	top: -20.0rem;
+}
+
+
+.btn--higher {
+	display: none;
+}
+
+
+
+
+.btn--lower .wp-block-button__link {
+	margin-top: -20.0rem;
+	bottom: -20.0rem;
+	z-index: 1000;
+}
+
+.btn--lower {
+	display: none;
+}
+
+
+
+.btn--no-margin-top .wp-block-button__link {
+	margin-top: -1.0rem;
+}
+
+
+.img--no-margin-top {
+	margin-top: 0.0rem;
+}
+
+
+
 .wp-block-media-text .wp-block-media-text__content {
 	padding: 0 3%;
 }
 
 
 
+.underlined .wp-block-button__link {
+	text-decoration: underline;
+}
+
+
+
+.img--border-gray {
+	border: 1px solid $color-gray;
+	padding: 1.0rem;
+}
+
+
+
+hr.wp-block-separator {
+	width: calc(100% + 2.0rem);
+	height: 85px;
+	border: 0px;
+	color: transparent;
+	background-image: url('../../images/Separator_Friends-of-Juan-Diego-Florez.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+	margin-top: 2.0rem;
+	margin-bottom: 2.0rem;
+	margin-left: -1.0rem;
+
+	@include atMedium {
+		position: relative;
+		max-width: initial;
+		width: calc(100% + 13.8rem);
+		margin-left: -6.9rem;
+		margin-right: initial;
+		overflow: hidden;
+	}
+
+}
+
+
+.container-fullwidth--blue .hr--white {
+	color: $color-white;
+	border: 1px solid $color-white;
+	background-image: none;
+}
+
+
+.container-fullwidth--blue .hr--white {
+	height: 1px;
+	color: $color-white;
+	background-image: none;
+	margin-top: 4.0rem;
+	margin-bottom: 4.0rem;
+}
+
+
+
+br.is-hidden-desktop {
+	@include atMedium {
+		display: none;
+	}
+}
+
+
+.text--indent-centered {
+	margin-left: 25% !important;
+}
+
+
+a[href$=".pdf"] {
+	font-weight: 600;
+	color: $color-white;
+}
+
+
+a[href$=".pdf"]::after {
+	content: url(../../icons/icon_pdf.svg);
+	vertical-align: middle;
+	margin-left: 1.0rem;
+}

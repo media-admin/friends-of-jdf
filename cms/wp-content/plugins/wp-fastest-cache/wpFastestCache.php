@@ -3,7 +3,7 @@
 Plugin Name: WP Fastest Cache
 Plugin URI: http://wordpress.org/plugins/wp-fastest-cache/
 Description: The simplest and fastest WP Cache system
-Version: 1.1.4
+Version: 1.1.5
 Author: Emre Vona
 Author URI: https://www.wpfastestcache.com/
 Text Domain: wp-fastest-cache
@@ -959,7 +959,7 @@ GNU General Public License for more details.
 			}
 
 			if(current_user_can('manage_options')){
-				if(is_array($_GET["roles"]) && !empty($_GET["roles"])){
+				if(isset($_GET["roles"]) && is_array($_GET["roles"]) && !empty($_GET["roles"])){
 					$roles_arr = array();
 
 					foreach($_GET["roles"] as $key => $value){

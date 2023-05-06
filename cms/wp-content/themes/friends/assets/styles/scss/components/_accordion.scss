@@ -1,0 +1,139 @@
+/* === ACCORDION === */
+
+* {
+	box-sizing: border-box;
+}
+
+*::before, *::after {
+	box-sizing: border-box;
+}
+
+.accordion {
+	position: relative;
+	border-bottom: 1px solid $color-secondary;
+	background-color: transparent !important;
+	margin-bottom: 3.0rem;
+}
+
+.accordion .accordion-item {
+
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+	/* border-bottom: 1px solid $mainRed; */
+	padding-bottom: 0.25rem;
+}
+
+.accordion button {
+	position: relative;
+	display: block;
+	display: flex;
+	align-items: center;
+	text-align: left;
+	width: 100%;
+	font-family: "Albert Sans", sans-serif;
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 2.4rem;
+	color: $color-gray;
+	outline: none;
+	background-color: transparent !important;
+	border: 0;
+	margin-bottom: 0.0rem;
+	padding: 0.25rem 1em;
+	padding-right: 1.0rem;
+	padding-bottom: 1.0rem !important;
+}
+
+
+.accordion button:hover, .accordion button:focus {
+	cursor: pointer;
+}
+
+
+.accordion button:hover::after, .accordion button:focus::after {
+	cursor: pointer;
+	color: $color-secondary;
+	background-color: transparent !important;
+}
+
+
+.accordion button .accordion-title {
+	font-weight: 600;
+	padding: 1em 1.75em 1em 0;
+	padding-bottom: 1.0rem;
+}
+
+.accordion button .icon {
+	display: inline-block;
+	position: absolute;
+/* 	top: 2.9rem; */
+	right: 18px;
+	width: 22px;
+	height: 22px;
+	border: 1px solid;
+	border-radius: 22px;
+}
+
+
+.accordion button .icon::before {
+	display: block;
+	position: absolute;
+	content: '';
+	top: 9px;
+	left: 5px;
+	width: 10px;
+	height: 2px;
+	background: currentColor;
+}
+
+
+.accordion button .icon::after {
+	display: block;
+	position: absolute;
+	content: '';
+	top: 5px;
+	left: 9px;
+	width: 2px;
+	height: 10px;
+	background: currentColor;
+}
+
+
+.accordion button[aria-expanded='true'] {
+}
+
+
+.accordion button[aria-expanded='true'] .icon::after {
+	width: 0;
+}
+
+
+.accordion button[aria-expanded='true'] + .accordion-content {
+	opacity: 1;
+	max-height: 40em;
+	transition: all 200ms linear;
+	will-change: opacity, max-height;
+}
+
+
+.accordion .accordion-content {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: opacity 200ms linear, max-height 200ms linear;
+	will-change: opacity, max-height;
+}
+
+
+.accordion .accordion-content p {
+	font-family: "Albert Sans", sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 2.4rem;
+	color: $color-gray;
+	margin: 0.0rem 2.5rem;
+	margin-bottom: 0.75rem;
+	padding-top: 0.0rem;
+	padding-bottom: 0.75rem;
+}

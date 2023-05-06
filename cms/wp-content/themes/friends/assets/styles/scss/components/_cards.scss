@@ -2,11 +2,13 @@
 .card {
 	position: relative;
 	width: 100%;
-	background-color: white;
+	background-color: $color-light-white;
+	/*
 	border-radius: 17px;
-	/* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 	mix-blend-mode: multiply;
+	*/
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
 	overflow: hidden;
@@ -41,10 +43,10 @@
 		@include atLarge {
 			flex: 3;
 			flex-basis: 33%;
+
+			flex: 2;
+			flex-basis: 50%
 		}
-
-
-
 
 	}
 
@@ -58,6 +60,8 @@
 
 	@include atLarge {
 		width: 32%;
+
+		width: 48%;
 	}
 
 

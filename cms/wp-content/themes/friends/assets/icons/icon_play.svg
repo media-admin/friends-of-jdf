@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="91" viewBox="0 0 90 91">
+  <g id="Gruppe_2282" data-name="Gruppe 2282" transform="translate(-1410 -2101)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1410 2101)" fill="#e6087e" stroke="#707070" stroke-width="2">
+      <ellipse cx="45" cy="45.5" rx="45" ry="45.5" stroke="none"/>
+      <ellipse cx="45" cy="45.5" rx="44" ry="44.5" fill="none"/>
+    </g>
+    <g id="Pfad_30" data-name="Pfad 30" transform="translate(1480 2125) rotate(90)" fill="#fff">
+      <path d="M 44.12286758422852 37.5 L 0.877131462097168 37.5 L 22.5 0.9813775420188904 L 44.12286758422852 37.5 Z" stroke="none"/>
+      <path d="M 22.5 1.962745666503906 L 1.754257202148438 37 L 43.24574279785156 37 L 22.5 1.962745666503906 M 22.5 0 L 45 38 L 0 38 L 22.5 0 Z" stroke="none" fill="#707070"/>
+    </g>
+  </g>
+</svg>

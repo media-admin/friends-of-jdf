@@ -15,7 +15,7 @@ html {
 
 body {
   color: $color-gray;
-  background-image: url('../../assets/images/backgrounds/bg_body.jpg');
+  background-image: url('../../images/bg_body.jpg');
   background-size: contain;
   background-repeat: repeat-y;
 
@@ -27,17 +27,18 @@ body {
 main {
   position: relative;
   margin: 0rem;
-  padding: 1rem 1rem;
+  padding: 0rem 1rem;
   z-index: 0;
 
   @include atMedium {
     position: relative;
+    top: 172px;
   }
 }
 
 
 ul {
-  list-style-image: url('../../assets/icons/icon_bullet-point.svg');
+  list-style-image: url('../../icons/icon_bullet-point.svg');
   list-style-position: inside;
   padding-left: 2.0rem;
 
@@ -90,8 +91,8 @@ progress {
 
 
 .site-content {
+  background-color: $color-light-white;
   padding: 1rem;
-
 
   @include atMedium {
     max-width: 1136px;
@@ -99,6 +100,21 @@ progress {
     margin: 0 auto;
   }
 }
+
+
+.site-content__container-inner {
+
+  @include atMedium {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 2.0rem;
+    padding-top: 0.0rem;
+  }
+}
+
+
+
 
 .img--fullwidth {
   position: absolute;
@@ -121,8 +137,55 @@ progress {
 
   @include atMedium {
     position: relative;
-    width: calc(100% + 2rem);
-    margin-left: -1rem;
+    max-width: initial;
+    width: calc(100% + 13.8rem);
+    margin-left: -6.9rem;
     margin-right: initial;
+    overflow: hidden;
   }
+}
+
+
+
+
+.blockquote--yellow {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 3.0rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  font-style: italic;
+  color: $color-primary;
+  background-color: $color-yellow;
+  margin-top: -5.0rem;
+  padding: 1.25rem 1.75rem;
+}
+
+
+
+.link--blue {
+  font-weight: 600;
+  color: $color-primary;
+}
+
+
+.shoutout-box {
+  border: 2px solid $color-primary;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+}
+
+.shoutout-box strong {
+  color: $color-gray;
+}
+
+
+
+.color--pink {
+  color: $color-secondary;
+  font-weight: 500;
+  line-height: 2.0rem;
+  padding-top: 1.0rem !important;
+  padding-bottom: 1.0rem !important;
 }

@@ -1,0 +1,362 @@
+/* COOKIE BANNER */
+
+#dywc_bglayer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.25s;
+}
+
+#dywc {
+  text-align: center;
+  position: fixed;
+  box-sizing: border-box;
+  color: $color-gray;
+  transition: all 0.25s;
+  width: calc(100% - 60px);
+  border: 2px solid $color-primary;
+  z-index: 1000;
+  opacity: 1;
+  max-width: 400px;
+
+  & > .content {
+    padding: 1.5rem;
+    background-color: $color-tertiary;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+
+    h2 {
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      font-weight: bold;
+      color: $color-primary;
+      margin: 0;
+      margin-top: 1.5rem;
+      padding: 0;
+    }
+
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      font-weight: normal;
+      margin: 1.5rem 0;
+      padding: 0;
+    }
+
+
+    P:last-child {
+      margin-bottom: 0;
+    }
+
+    .dsg {
+      line-height: 2.5rem;
+      padding: 1.0rem 0.5rem;
+    }
+
+
+    a {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      color: $color-secondary;
+    }
+
+
+    a.info {
+      display: inline-block;
+      margin-left: .5rem;
+    }
+
+
+    & > div {
+      background-color: $color-yellow;
+      padding: 1.5rem;
+      color: $color-gray;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+
+      .cookie_group_wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1.5rem;
+
+        & > * {
+          margin: .5rem;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+        }
+
+      }
+
+      & .cookie_group label {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-left: 0.5rem;
+      }
+
+
+      a {
+        color: $color-yellow;
+        font-size: 1.4rem;
+      }
+
+
+      a.info {
+        font-size: 1.2rem;
+
+        &:before {
+          content: '[';
+          display: inline-block;
+          margin-right: .5rem;
+        }
+
+        &:after {
+          content: ']';
+          display: inline-block;
+          margin-left: 5px;
+        }
+
+      }
+
+      .accept_wrap {
+        padding-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        & > a {
+          margin-top: .5rem;
+          margin-bottom: .5rem;
+        }
+
+        & > a.accept {
+          font-weight: 700;
+          text-decoration: none;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          background-color: $color-secondary;
+          padding: .8rem 1.4rem;
+          padding-top: 1.0rem;
+        }
+
+
+        & > a.accept2 {
+          font-size: 1.5rem;
+          color: $color-secondary;
+          text-decoration: none;
+        }
+
+      }
+
+
+
+      &:last-child {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        margin-bottom: -1.5rem;
+        width: auto;
+        background-color: #DEDEDE;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+
+        a {
+          font-size: 1.2rem;
+          line-height: 1.4rem;
+          display: inline-block;
+          margin: .5rem 0;
+        }
+
+      }
+
+    }
+
+  }
+
+  & > .info {
+    opacity: 0;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100%);
+    max-height: 100%;
+    overflow-y: auto;
+    background-color: $color-tertiary;
+    transition: all 0.5s;
+
+    p {
+      padding: 1.5rem;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+    }
+
+
+    & > .inner > .group {
+
+      & > .cookie {
+        text-align: left;
+        padding: .5rem;
+        font-size: 1.2rem;
+        margin: 0 1.5rem 1.5rem 1.5rem;
+
+        .row {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: flex-start;
+          background-color: $color-tertiary-light;
+          margin: 0 0 .1rem 0;
+          padding: .5rem;
+          box-sizing: border-box;
+          flex-wrap: nowrap;
+          font-size: 1.2rem;
+          line-height: 1.3rem;
+        }
+
+        .row > .label {
+          width: 100px;
+          flex-grow: 0;
+          flex-shrink: 0;
+        }
+
+        .row > .value {
+          text-align: left;
+        }
+
+      }
+    }
+  }
+
+
+  &.show_info > .info {
+    opacity: 1;
+    z-index: 2;
+  }
+
+
+  &.ft {
+    left: 3.0rem;
+    top: 3.0rem;
+  }
+
+
+  &.mt {
+    left: 50%;
+    top: 3.0rem;
+    transform: translateX(-50%);
+  }
+
+  &.rt {
+    right: 3.0rem;
+    top: 3.0rem;
+  }
+
+
+  &.lm {
+    left: 3.0rem;
+    top: 50%;
+    transform:translateY(-50%);
+  }
+
+
+  &.mm {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+
+  &.rm {
+    right: 3.0rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  &.lb {
+    left: 3.0rem;
+    bottom: 3.0rem;
+  }
+
+
+  &.mb {
+    left: 50%;
+    bottom: 3.0rem;
+    transform: translateX(-50%);
+  }
+
+
+  &.rb {
+    right: 3.0rem;
+    bottom: 3.0rem;
+  }
+
+}
+
+
+#dywc.hide,
+#dywc_bglayer.hide {
+  opacity:0;
+}
+
+
+#dywc_info {
+
+  & > .cookie {
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 0 0 1.5rem 0;
+    width: 100%;
+
+    .row {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      background-color: $color-tertiary-light;
+      margin: 0 0 .1rem 0;
+      padding: .2rem .5rem;
+      box-sizing: border-box;
+
+      & .label {
+        width: 10.0rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+
+      & .value {
+        text-align: left;
+      }
+
+    }
+  }
+
+  .accept {
+
+  }
+
+  .reject {
+    color: $color-primary;
+  }
+
+}
+
+
+
+input[checkbox] {
+  height: 1.4rem;
+  width: 1.4rem;
+}

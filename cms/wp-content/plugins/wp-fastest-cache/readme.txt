@@ -4,7 +4,7 @@ Donate link: https://profiles.wordpress.org/emrevona/
 Tags: cache, Optimize, performance, wp-cache, core web vitals
 Requires at least: 3.3
 Tested up to: 6.2
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,32 +78,13 @@ It is very inconvenient to use multiple caching plugins at the same time. That's
 
 WP Fastest Cache is compatible with most popular plugins such as Contact Form 7, Yoast SEO, Elementor Website Builder, Classic Editor, Akismet Spam Protection, WooCommerce, Contact Form by WPForms, Really Simple SSL, All-in-One WP Migration, Yoast Duplicate Post, Wordfence Security – Firewall & Malware Scan, WordPress Importer, UpdraftPlus WordPress Backup Plugin, MonsterInsights, All in One SEO, WP Mail SMTP by WPForms.
 
-<h4>Supported languages: </h4>
+<h4>Supported Languages</h4>
 
-* Bahasa Indonesia
-* Deutsch (by Thomas Cloer)
-* Español (by Javier Esteban)
-* Español de Argentina (by Mauricio Lopez)
-* Español (Colombia) (by Javier Esteban)
-* Español (Ecuador) (by Javier Esteban)
-* Español (México) (by Yordan Soares)
-* Español de Venezuela (by Yordan Soares)
-* Français (by Cyrille Sanson)
-* Galego (by Jesús Amieiro)
-* Italiano
-* Magyar
-* Nederlands
-* Nederlands (België) (by Pieterjan Deneys)
-* Slovenčina
-* Suomi (by arhipaiva)
-* Svenska
-* Türkçe
-* Čeština
-* Русский
-* فارسی
-* 中文（中国大陆）
-* 中文（台灣) (by (Alex Lion))
-* 日本語
+Although there are over 7000 languages spoken in the world today, we feel very lucky to support 26 languages for now.
+
+However, localizing or adapting a plugin to another language or culture is time consuming and a demanding task. That's where the amazing Translation Contributors team of WordPress comes into play. These selfless people spent their precious time without expecting anything in return so that other people can use the add-ons more easily. We sincerely thank all of them.
+
+Chinese Simplified (China), Chinese Traditional (Taiwan), Czech, Dutch (Belgium), Dutch (Netherlands), English (South Africa), English (UK), Finnish, French (France), Galician, German (Germany), Hungarian, Indonesian, Italian, Japanese, Persian, Russian, Slovak (Slovakia), Spanish (Argentina), Spanish (Colombia), Spanish (Ecuador), Spanish (Mexico), Spanish (Spain), Spanish (Venezuela), Swedish, Turkish
 
 == Installation ==
 
@@ -134,6 +115,13 @@ WP Fastest Cache is compatible with most popular plugins such as Contact Form 7,
 18. Database Cleanup
 
 == Changelog ==
+
+= 1.1.5 =
+* to replace wp_remote_get() with wp_safe_remote_get() in the check_url() function
+* to update translation files
+* to fix PHP Warning: Undefined array key "roles" in wpFastestCache.php on line 962
+* to remove multiple slashes from url
+* to fix PHP Warning: Attempt to read property “wpFastestCacheLanguage” on array in admin.php on line 23
 
 = 1.1.4 =
 * to check trailing slash for query string cache

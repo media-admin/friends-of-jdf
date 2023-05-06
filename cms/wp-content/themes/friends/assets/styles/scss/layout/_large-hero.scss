@@ -1,57 +1,92 @@
 /* == LARGE HERO */
-.section-large-hero {
+
+.home .large-hero {
   position: relative;
   width: 100%;
   min-height: 250px;
-  max-height: 500px;
+  max-height: 730px;
   height: auto;
   margin: 0;
-  background-image: url('../../assets/images/backgrounds/bg_hero-header.jpg');
-  background-repeat: no-repeat;
-  background-position: left center;
-  object-fit: contain;
+  overflow: hidden;
 
   @include atMedium {
+    max-width: 1136px;
+    width: 100%;
     position: relative;
-    min-height: 768px;
-    max-height: 780px;
-    /*     top: -105px; */
-    background-size: cover;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    object-position: center center;
+    min-height: 700px;
+    max-height: 720px;
     margin: 0 auto;
-    margin-bottom: 5rem;
+    top: 172px;
     z-index: 0;
     overflow: hidden;
   }
+}
 
-  &__img {
-    position: relative;
-    display: block;
-    max-width: calc(1136px + 2rem);
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    object-position: center center;
+.large-hero__img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.large-hero__img--desktop {
+  display: none;
+
+  @include atMedium {
+    display: initial;
+  }
+}
+
+.large-hero__img--smartphone {
+
+  @include atMedium {
+    display: none;
+  }
+}
+
+
+.large-hero__text {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  margin: 0 auto;
+
+  @include atMedium {
+
   }
 
+}
 
-  &__site-title {
-    position: absolute;
-    width: 100%;
-    background-color: rgba(#172905,0.7);
-    background-blend-mode: multiply;
-    bottom: 0;
-    padding-left: 2rem;
-    padding-right: 2rem;
+.large-hero__text h1 {
+  text-indent: -99999999px;
+}
 
-    @include atMedium {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
 
-  }
+.large-hero__cta-container {
+  width: 45%;
+  color: $color-gray;
+  text-align: center;
+  background-color: rgba($color-white,0.85);
+  margin: 0 auto;
+  padding: 2.0rem 1.5rem;
+}
 
+.large-hero__cta-img {
+
+}
+
+.large-hero__cta-message {
+  font-size: 2.0rem;
+  line-height: 2.0rem;
+  font-weight: 600;
+  margin-top: 2.0rem;
+}
+
+.large-hero__cta-notice {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 400;
 }

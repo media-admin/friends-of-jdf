@@ -1,0 +1,19 @@
+/* == SINGLE TEMPLATE */
+.single {
+
+  & h1 {
+    text-indent: initial;
+  }
+
+  & .site-content {
+
+
+    @include atMedium {
+      padding-bottom: 8.0rem;
+    }
+
+  }
+
+
+}
+

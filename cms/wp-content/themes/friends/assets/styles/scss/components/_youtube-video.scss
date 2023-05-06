@@ -1,0 +1,85 @@
+/* === YOUTUBE VIDEOS === */
+.youtube-video {
+	width: 100%;
+	height: 400px !important;
+	height: 100% !important;
+
+
+	& .video--fullwidth iframe {
+		position: relative !important;
+		width: 100% !important;
+		height: 100% !important;
+		min-height: 550px !important;
+	}
+
+
+	/* Video Wrapper */
+	.video_wrapper {
+		position: relative;
+		height: 400px !important;
+		width: 100% !important;
+		text-align: center;
+		background: rgba($color-gray,0.15);
+		background-size: cover;
+
+			.video_trigger {
+				position: absolute;
+				bottom: 0;
+				width: -webkit-calc( 100% - 0px );
+				width: -moz-calc( 100% - 0px );
+				width: -o-calc( 100% - 0px );
+				width: calc( 100% - 0px );
+				height: -webkit-calc( 100% - 260px );
+				height: -moz-calc( 100% - 260px );
+				height: -o-calc( 100% - 260px );
+				height: calc( 100% - 260px );
+
+				height: -webkit-calc( 100% - 0px );
+				height: -moz-calc( 100% - 0px );
+				height: -o-calc( 100% - 0px );
+				height: calc( 100% - 0px );
+
+				color: $color-white;
+				background-color: rgba( $color-black, .8 );
+
+				z-index: 9;
+				padding: 8% 30px;
+
+				&:before {
+					content: '\f04b';
+					font-family: 'FontAwesome';
+					position: absolute;
+					z-index: -1;
+					font-size: 120px;
+					color: rgba( $color-white, .2 );
+					width: 120px;
+					height: 120px;
+					line-height: 120px;
+					text-align: center;
+					top: -webkit-calc( 50% - 60px );
+					top: calc( 50% - 60px );
+					left: -webkit-calc( 50% - 60px );
+					left: calc( 50% - 60px );
+				}
+			}
+
+		.video_layer {
+			position: relative;
+			display: none;
+			height: inherit;
+			width: inherit;
+			margin: auto;
+
+			iframe {
+				width: 100% !important;
+				min-height: 400px !important;
+				height: 100% !important;
+				border: 0px none transparent;
+				height: inherit;
+				width: inherit;
+				vertical-align: middle;
+			}
+		}
+	}
+
+}
